@@ -5,8 +5,8 @@ import { parse } from "querystring";
 const smtpTransport = nodemailer.createTransport({
   service: "gmail", // z.B. Gmail, Outlook, etc.
   auth: {
-    user: "rammraphael97@gmail.com", // Deine E-Mail-Adresse
-    pass: "1997GuildWars2", // Dein E-Mail-Passwort oder App-Passwort
+    user: "", // Deine E-Mail-Adresse
+    pass: "", // Dein E-Mail-Passwort oder App-Passwort
   },
 });
 
@@ -15,7 +15,7 @@ export async function POST(req) {
   const { email, subject, message } = body;
 
   const mailOptions = {
-    from: "rammraphael97@gmail.com",
+    from: "",
     to: email,
     subject: subject,
     text: message,
