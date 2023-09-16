@@ -2,8 +2,12 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import NavLink from './navLink'
-import {Bars3Icon, XmarkIcon } from "@heroicons/react/24/solid";
+import Bars3Icon from "public/3bars.svg";
+import XmarkIcon from "public/xbutton.svg"
 import MenuOverlay from './MenuOverlay';
+import Image from 'next/image';
+
+
 const navLinks = [
   {
     title: "About",
@@ -35,9 +39,9 @@ const Navbar = () => {
           {
             !navbarOpen 
             ? 
-              <button onClick={() => setNavbarOpen(true)} className='text-slate-200 flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hovber:border-white'><Bars3Icon className='h-5 w-5'/></button> 
+              <button onClick={() => setNavbarOpen(true)} className='text-slate-200 flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hovber:border-white'><Image className='h-5 w-5' src={Bars3Icon} alt='3bars'/></button> 
               : 
-              <button onClick={() => setNavbarOpen(false)} className='text-slate-200 flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hovber:border-white'><XmarkIcon className='h-5 w-5'/></button> 
+              <button onClick={() => setNavbarOpen(false)} className='text-slate-200 flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hovber:border-white'><Image className='h-5 w-5' src={XmarkIcon} alt='3bars'/></button> 
           }
         </div>
         <div className='menu hidden md:block md:w-auto' id="navbar">
