@@ -16,21 +16,12 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "GreenWave",
-    description: "Fully working Social Media App inspired by Threds",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/AnthonyMerlyn/SociaSync_app/tree/main",
-    previewUrl: "https://socia-sync-app.vercel.app",
-  },
-  {
-    id: 3,
-    title: "GreenWave",
-    description: "Fully working Social Media App inspired by Threds",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/AnthonyMerlyn/SociaSync_app/tree/main",
-    previewUrl: "https://socia-sync-app.vercel.app",
+    title: "ChaceOfPower",
+    description: "My first steps into Game Development using Unity",
+    image: "/images/projects/2.png",
+    tag: ["All", "Games"],
+    gitUrl: "https://github.com/AnthonyMerlyn/TurnBasedStrategyGame",
+    previewUrl: "https://play.unity.com/mg/other/finishedgame-3",
   },
 ];
 
@@ -70,11 +61,11 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Games"
+          isSelected={tag === "Games"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16">
+      <ul ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16 ">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
