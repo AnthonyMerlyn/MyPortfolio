@@ -16,6 +16,15 @@ const projectsData = [
   },
   {
     id: 2,
+    title: "AI Summarizer",
+    description: "An App that summarizes Websites. You just need to give it a link",
+    image: "/images/projects/3.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/AnthonyMerlyn/AiApp",
+    previewUrl: "https://ai-app-summaricer.vercel.app",
+  },
+  {
+    id: 3,
     title: "ChaceOfPower",
     description: "My first steps into Game Development using Unity",
     image: "/images/projects/2.png",
